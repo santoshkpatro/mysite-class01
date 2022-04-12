@@ -9,5 +9,17 @@
 <body>
     <h1>Hello, World!!</h1>
     <p>Hi</p>
+    <p>{{ name }}</p>
+    <p>{{ age }}</p>
+
+    {% if age > 20 %}
+        <p>Eligible</p>
+    {% else %}
+        <p>Not eligible</p>
+    {% endif %}
+
+    {% for score in scores %}
+        <p>{{ score }}</p>
+    {% endfor %}
 </body>
 </html>

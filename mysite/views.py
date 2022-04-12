@@ -2,7 +2,13 @@ from django.shortcuts import HttpResponse, render
 
 
 def index(request):
-    return render(request, 'index.html')
+    # Processing
+    data = {
+        'name': 'Jeet',
+        'age': 18,
+        'scores': [20, 34, 56, 77]
+    }
+    return render(request, 'index.html', context=data)
 
 
 def contact_us(request):
