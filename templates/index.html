@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello, World!!</h1>
-    <p>Hi</p>
-    <p>{{ name }}</p>
-    <p>{{ age }}</p>
+{% extends 'base.html' %}
 
-    {% if age > 20 %}
-        <p>Eligible</p>
-    {% else %}
-        <p>Not eligible</p>
-    {% endif %}
+{% block body %}
 
-    {% for score in scores %}
-        <p>{{ score }}</p>
-    {% endfor %}
-</body>
-</html>
+<h1>Home Page</h1>
+<button class="btn btn-primary">Click Me</button>
+
+{% endblock %}
