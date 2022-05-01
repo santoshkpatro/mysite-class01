@@ -12,7 +12,7 @@ def index(request):
 
 
 def contact_us(request):
-    return HttpResponse('<h1>Contact Us Page is lit</h1>')
+    return render(request, 'contact.html')
 
 
 def about_us(request):
